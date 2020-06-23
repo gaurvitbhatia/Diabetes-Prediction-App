@@ -1,0 +1,13 @@
+<h1>Thank You. Here is the Information You Gave:</h1>
+<ul>
+	<li>Pregnancies: {{session['prg']}}</li>
+	<li>Glucose:  {{session['glc']}}</li>
+	<li>BloodPressure: {{session['bp']}}</li>
+	<li>SkinThickness:  {{session['skt']}}</li>
+	<li>Insulin:  {{session['ins']}}</li>
+	<li>BMI:  {{session['bmi']}}</li>
+	<li>DiabetesPedigreeFunction:  {{session['dpf']}}</li>
+	<li>Age:  {{session['age']}}</li>
+</ul>
+<br>
+<h3>The prediction is : <h2 style="color: red">{{results}}</h2></h3>

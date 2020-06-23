@@ -1,0 +1,54 @@
+<h1 style="color: green; text-align:center; padding: 11px">DIABETES PREDICTION APP</h1>
+<h2 style="text-align:center">Please enter the below details for prediction :</h2>
+<head>  
+    <style> 
+        .tab2 {  
+            display: inline-block; 
+            margin-left: 10px;
+            placeholder: "Test"  
+        }
+        .tab3 { 
+            display: inline-block; 
+            margin-left: 620px; 
+        } 
+        label{
+            width: 240px;
+            display: inline-block;
+            text-align:center;
+            margin-left: 400px;
+            }
+    </style> 
+</head> 
+<body>
+    <form  method="POST">
+        {# This hidden_tag is a CSRF security feature. #}
+        {{ form.hidden_tag() }}
+        <p><span class="label"></span> {{ form.Pregnancies.label }} : <span class="tab2"></span> {{form.Pregnancies}}
+        <br>
+        <br>    
+        <p><span class="label"></span>  {{ form.Glucose.label}} : <span class="tab2"></span> {{form.Glucose}}
+        <br>
+        <br>
+        <p><span class="label"></span> {{form.BloodPressure.label}} : <span class="tab2"></span> {{form.BloodPressure}}
+        <br>
+        <br>
+        <p><span class="label"></span> {{form.SkinThickness.label}} : <span class="tab2"></span> {{form.SkinThickness}}
+        <br>
+        <br>
+        <p><span class="label"></span> {{form.Insulin.label}} : <span class="tab2"></span> {{form.Insulin}}
+        <br>
+        <br>
+        <p><span class="label"></span> {{form.BMI.label}} : <span class="tab2"></span> {{form.BMI}}
+        <br>
+        <br>
+        <p><span class="label"></span> {{form.DiabetesPedigreeFunction.label}} : <span class="tab2"></span> {{form.DiabetesPedigreeFunction}}
+        <br>
+        <br>
+        <p><span class="label"></span> {{form.Age.label}} : <span class="tab2"></span> {{form.Age}}
+        <br>
+        <br>
+        <br>
+        
+        <span class="tab3"></span> {{ form.submit() }}
+    </form>
+</body> 
